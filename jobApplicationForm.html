@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <title>Job Application</title>
+    </head>
+    <body>
+        <h2>Application for Employment </h2>
+        <form action="form.php" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                First name: <input type="text" name="firstname"><br>
+                Last name: <input type="text" name="lastname"><br>
+                Middle name: <input type="text" name="middlename"><br>
+                Age: <input type="text" name="age"><br>
+                Phone number: <input type="text" name="phonenumber"><br>
+                Street Address: <input type="text" name="streetaddress"><br>
+                City: <input type="text" name="city"><br>
+                State: <input type="text" name="state"><br>
+                ZIP: <input type="text" name="zip"><br>
+            </fieldset>
+<br>
+        <fieldset>
+            <legend>Employee Interests</legend>
+           <div> Position applying for: <input type="position applying for" name="position"> </div>
+           <div><label>Why are you interested in working for us?</label><br>
+                <textarea name="essay"> </textarea>
+            </div>
+           <div>When can you start?: <input type="start" name="start"> </div>
+           <div><label>Position type (select below)</label>
+            <ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+        </div>
+        <div><label>Preferred location</label></div>
+        <select name="City"> <option value="Seattle">Seattle</option> <option value="Bellevue">Bellevue</option> <option value="Kirkland">Kirkland</option> <option value="Renton">Renton</option> </select>
+        </fieldset>
+<br>
+            <fieldset>
+                <legend>Work History</legend>
+                <div><label>Do you have any work experience?</label> 
+                    <input type="radio" name="answer" value="yes"> Yes <input type="radio" name="answer" value="no"> No <br>
+                </div>
+                <div><label>If yes, please list past work experience below (as a numbered list)</label> <br>
+                <textarea name="essay"> </textarea>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit form">
+        </form>
+    </body>
+</html>
